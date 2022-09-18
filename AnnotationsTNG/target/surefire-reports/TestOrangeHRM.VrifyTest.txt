@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestOrangeHRM.VrifyTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 21.022 sec <<< FAILURE!
+homepg(TestOrangeHRM.VrifyTest)  Time elapsed: 3.665 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.fail(Assert.java:102)
+	at TestOrangeHRM.VrifyTest.homepg(VrifyTest.java:60)
+

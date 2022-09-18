@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="TestonChromeBrowser(failed)">
+    <parameter name="password" value="admin123"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+    <parameter name="username" value="Admin"/>
+    <classes>
+      <class name="crossbrowsertesting.CrossBrowser">
+        <methods>
+          <include name="Launchbrowser"/>
+          <include name="tearDown"/>
+          <include name="VerifyMyInfo"/>
+        </methods>
+      </class> <!-- crossbrowsertesting.CrossBrowser -->
+    </classes>
+  </test> <!-- TestonChromeBrowser(failed) -->
+  <test thread-count="3" parallel="tests" name="TestonfirefoxBrowser(failed)">
+    <parameter name="password" value="admin123"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+    <parameter name="username" value="Admin"/>
+    <classes>
+      <class name="crossbrowsertesting.CrossBrowser">
+        <methods>
+          <include name="Launchbrowser"/>
+          <include name="tearDown"/>
+          <include name="VerifyMyInfo"/>
+        </methods>
+      </class> <!-- crossbrowsertesting.CrossBrowser -->
+    </classes>
+  </test> <!-- TestonfirefoxBrowser(failed) -->
+  <test thread-count="3" parallel="tests" name="TestonMSedgE(failed)">
+    <parameter name="password" value="admin123"/>
+    <parameter name="browser" value="mSedge"/>
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+    <parameter name="username" value="Admin"/>
+    <classes>
+      <class name="crossbrowsertesting.CrossBrowser">
+        <methods>
+          <include name="Launchbrowser"/>
+          <include name="tearDown"/>
+          <include name="VerifyMyInfo"/>
+        </methods>
+      </class> <!-- crossbrowsertesting.CrossBrowser -->
+    </classes>
+  </test> <!-- TestonMSedgE(failed) -->
+</suite> <!-- Failed suite [Suite] -->

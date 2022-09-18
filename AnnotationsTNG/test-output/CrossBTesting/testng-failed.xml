@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CrossBTesting]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="admin123"/>
+  <parameter name="browserName" value="firefox"/>
+  <parameter name="id" value="Admin"/>
+  <parameter name="urL" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+  <test thread-count="5" name="Test12(failed)">
+    <classes>
+      <class name="TestNGpackage.CrossBrowserTesting">
+        <methods>
+          <include name="NaviagateToMyInfo"/>
+          <include name="LaunchApp"/>
+          <include name="VerifyMyInfo"/>
+          <include name="InitialiseBrowser"/>
+          <include name="Teardown"/>
+          <include name="VerifyEmplyeeDetails"/>
+          <include name="EnterloginDetails"/>
+        </methods>
+      </class> <!-- TestNGpackage.CrossBrowserTesting -->
+    </classes>
+  </test> <!-- Test12(failed) -->
+</suite> <!-- Failed suite [CrossBTesting] -->
